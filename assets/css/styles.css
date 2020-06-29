@@ -86,7 +86,19 @@ select, input[type="checkbox"], input[type="radio"], select:focus, input[type="c
     -moz-border-radius: 7px;
     -ms-border-radius: 7px;
     -o-border-radius: 7px;
+    transition: all 800ms ease;
+    background-size: 200% auto;
+    background-image: linear-gradient(25deg, var(--main-color) 0%, var(--secondary-color) 50%, var(--main-color) 100%);
+    -webkit-transition: all 800ms ease;
+    -moz-transition: all 800ms ease;
+    -ms-transition: all 800ms ease;
+    -o-transition: all 800ms ease;
 }
+
+.btn-blog:hover {
+    background-position: right center;
+}
+
 /* Start General */
 
 /* menu-overlay */
@@ -304,6 +316,7 @@ select, input[type="checkbox"], input[type="radio"], select:focus, input[type="c
     background: #FFF;
     box-shadow: 0 5px 25px RGBA(232, 232, 232, 0.6);
     padding: 10px 0;
+    z-index: 9;
 }
 
 .main-header .navbar-brand {
@@ -945,7 +958,7 @@ select, input[type="checkbox"], input[type="radio"], select:focus, input[type="c
     width: 100%;
     height: 50px;
     background: url(../images/book-bedore.png) no-repeat top center;
-    background-size: 100% 100%;
+    background-size: cover;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -1002,7 +1015,8 @@ select, input[type="checkbox"], input[type="radio"], select:focus, input[type="c
 /* Books and novel */
 
 .main-footer {
-	padding: 30px 0;
+    padding: 30px 0;
+    position: relative;
 }
 
 .main-footer .foter-list {
@@ -1031,7 +1045,7 @@ select, input[type="checkbox"], input[type="radio"], select:focus, input[type="c
 }
 
 .footer-logo img {
-  height: 70px;
+  height: 60px;
   margin-bottom: 15px;
 }
 
@@ -1053,6 +1067,97 @@ select, input[type="checkbox"], input[type="radio"], select:focus, input[type="c
   font-weight: normal;
   line-height: 1.8;
 }
+
+/* page-title */
+.page-title {
+    padding: 40px 0;
+    background-size: cover;
+    position: relative;
+}
+
+.page-title::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, var(--main-color), var(--secondary-color));
+    z-index: 1;
+    opacity: 0.85;
+}
+
+.page-title h1 {
+    color: #FFF;
+    font-size: 28px;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+.page-title p {
+    color: #FFF;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.breadcrumb {
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+    justify-content: center;
+}
+
+.breadcrumb .breadcrumb-item,
+.breadcrumb .breadcrumb-item a,
+.breadcrumb-item + .breadcrumb-item::before {
+    color: #FFF;
+    font-size: 14px;
+}
+/* page-title */
+
+/* main-content */
+.main-content {
+    padding: 60px 0;
+    position: relative;
+    min-height: 60px;
+}
+
+.main-content::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -63px;
+    left: -43px;
+    width: 356px;
+    height: 470px;
+    background: url(../images/icons/elipses.svg) no-repeat center;
+    background-size: 100% 100%;
+    z-index: -1;
+}
+
+.main-content::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: -60px;
+    width: 356px;
+    height: 470px;
+    background: url(../images/icons/elipses.svg) no-repeat center;
+    background-size: 100% 100%;
+    z-index: -1;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.main-content .blog-item {
+    margin-bottom: 35px;
+}
+/* main-content */
 
 @media(max-width: 1200px) {
   .main-header .navbar-light .navbar-nav .nav-link {

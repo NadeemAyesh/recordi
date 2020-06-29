@@ -19,8 +19,31 @@ $(document).ready(function () {
         });
     });
 
-    
+    // Add slideDown animation to Bootstrap dropdown when expanding.
+    $('.dropdown').on('show.bs.dropdown', function () {
+        $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+    });
+
+    // Add slideUp animation to Bootstrap dropdown when collapsing.
+    $('.dropdown').on('hide.bs.dropdown', function () {
+        $(this).find('.dropdown-menu').first().stop(true, true).fadeOut();
+    });
+
+    //data-tab="#profile"
+    $('.modal-toggle').on('click', function (e) {
+        var tab = e.currentTarget.hash;
+        console.log(tab)
+        // $('.nav-tabs li > a[href="' + tab + '"]').tab("show");
+
+        $('.login-register').on('show.bs.modal', function (e) {
+            // $('#home').tab('dispose');
+            $(tab).tab("show");
+
+        });
+    });
 });
+
+
 
 /* ---- particles.js config ---- */
 
