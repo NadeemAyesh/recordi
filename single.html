@@ -1,0 +1,770 @@
+<!doctype html>
+<html lang="ar">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Required meta tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="copyright" content="" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap-rtl.min.css">
+    <link rel="stylesheet" href="assets/libs/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/libs/bootstrap-datepicker-master/dist/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="assets/libs/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- FavIcon Links for all devices -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- FavIcon Links for all devices -->
+
+    <title>Recordi</title>
+</head>
+
+<body>
+    <!-- side menu -->
+    <div class="menu-overlay"></div>
+    <aside class="side-menu">
+        <div class="p-3">
+            <a href="" class="btn btn-blog btn-block"><i class="fa fa-user-alt fa-fw"></i> تسجيل الدخول</a>
+        </div>
+        <hr>
+    
+        <div class="px-2">
+            <nav class="side-nav">
+                <li class="nav-item"><a href="" class="nav-link">الرئيسية</a></li>
+                <li class="nav-item"><a href="" class="nav-link">الرئيسية</a></li>
+                <li class="nav-item"><a href="" class="nav-link">الرئيسية</a></li>
+                <li class="nav-item"><a href="" class="nav-link">الرئيسية</a></li>
+                <li class="nav-item"><a href="" class="nav-link">الرئيسية</a></li>
+            </nav>
+        </div>
+    
+        <hr>
+        <div class="p-3">
+            <a href="" class="btn btn-blog btn-block"><i class="fa fa-user-alt fa-fw"></i> تسجيل جديد</a>
+        </div>
+    </aside>
+    <!-- side menu -->
+    
+    <!-- Modal -->
+    <div class="modal fade" id="loginRegisterModal" tabindex="-1" role="dialog" aria-labelledby="loginRegisterModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <nav class="modal-tabs">
+                    <div class="nav nav-tabs nav-justified" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+                            aria-controls="nav-home" aria-selected="true">تسجيل دخول</a>
+                        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+                            aria-controls="nav-profile" aria-selected="false">تسجيل جديد</a>
+                    </div>
+                </nav>
+                <div class="modal-body">
+    
+    
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                            <form class="blog-form">
+                                <div class="p-5">
+                                    <figure class="modal-img">
+                                        <img src="assets/images/icons/password.svg" alt="" title="" class="img-fluid" />
+                                    </figure>
+                                    <h4 class="form-title">تسجيل دخول لحسابك</h4>
+    
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-8">
+                                            <div class="form-group">
+                                                <label><i class="fa fa-user fa-fw"></i>
+                                                    إسم المستخدم</label>
+                                                <input type="text" name="" placeholder="إسم المستخدم"
+                                                    class="form-control" />
+                                            </div>
+                                            <div class="form-group">
+                                                <label><i class="fa fa-lock fa-fw"></i>
+                                                    كلمة المرور</label>
+                                                <input type="password" name="" placeholder="كلمة المرور"
+                                                    class="form-control" />
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                <label class="custom-control-label" for="customCheck1">تذكرني دائماً</label>
+                                            </div>
+                                            <div class="form-group text-center">
+                                                <button type="submit" class="btn btn-blog">تسجيل</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <form class="blog-form">
+                                <div class="px-5 py-3">
+                                    <div class="alert bg-light text-center">
+                                        <!-- <p><b>إقرأ ما شئت مجاناً لمدة 30 يوماً!</b></p> -->
+                                        <dvi class="row">
+                                            <div class="col-lg-6">
+                                                <div class="motivition-item">
+                                                    <img src="assets/images/icons/chat-bubble.svg" alt="" title=""
+                                                        class="img-fluid" />
+                                                    <p>عبر عن رأيك وشارك في المناقشات العامة</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="motivition-item">
+                                                    <img src="assets/images/icons/star.svg" alt="" title=""
+                                                        class="img-fluid" />
+                                                    <p>أنشئ روايتك الخاصة
+                                                        إكتشف متابعين وتفاعل معهم، واحفظ مقالاتك المفضلة</p>
+                                                </div>
+                                            </div>
+                                        </dvi>
+                                    </div>
+                                    <figure class="modal-img">
+                                        <img src="assets/images/icons/plus.svg" alt="" title="" class="img-fluid" />
+                                    </figure>
+                                    <h4 class="form-title">إنضم إلينا لتصبح من عائلتنا!</h4>
+                                </div>
+    
+                                <div class="row justify-content-center">
+                                    <!-- <div class="col-lg-6">
+                                            <div class="form-group custom-radios">
+                                                <input type="radio" name="payment" id="card">
+                                                <label for="card">
+                                                    <i class="fa fa-user-edit" aria-hidden="true"></i>
+                                                    <span>كاتب</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group custom-radios">
+                                                <input type="radio" name="payment" id="cash">
+                                                <label for="cash">
+                                                    <i class="fab fa-readme" aria-hidden="true"></i>
+                                                    <span>قارئ</span>
+                                                </label>
+                                            </div>
+                                        </div> -->
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label><i class="fa fa-user fa-fw"></i>
+                                                إسم المستخدم</label>
+                                            <input type="text" name="" placeholder="إسم المستخدم" class="form-control" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label><i class="fa fa-lock fa-fw"></i>
+                                                كلمة المرور</label>
+                                            <input type="password" name="" placeholder="كلمة المرور" class="form-control" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label><i class="fa fa-lock fa-fw"></i>
+                                                كلمة المرور</label>
+                                            <input type="password" name="" placeholder="كلمة المرور" class="form-control" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label><i class="fa fa-lock fa-fw"></i>
+                                                كلمة المرور</label>
+                                            <input type="password" name="" placeholder="كلمة المرور" class="form-control" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group mb-4">
+                                            <label><i class="fa fa-image fa-fw"></i>
+                                                صورة شخصية</label>
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" id="customFile">
+                                                <label class="custom-file-label" for="customFile">إختر ملف</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label><i class="fa fa-image fa-fw"></i>
+                                                هل أنت</label>
+                                            <div>
+                                                <div class="custom-control custom-radio">
+                                                    <input type="radio" id="customRadio1" name="customRadio"
+                                                        class="custom-control-input">
+                                                    <label class="custom-control-label" for="customRadio1">كاتب</label>
+                                                </div>
+                                                <div class="custom-control custom-radio">
+                                                    <input type="radio" id="customRadio2" name="customRadio"
+                                                        class="custom-control-input">
+                                                    <label class="custom-control-label" for="customRadio2">قارئ</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="custom-control custom-checkbox mt-3 mb-3">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck21">
+                                    <label class="custom-control-label" for="customCheck21">أوافق على شروط والاحكام وسياسة
+                                        الخصوصية والإستخدام</label>
+                                </div>
+                                <div class="form-group text-center">
+                                    <button type="submit" class="btn btn-blog">تسجيل</button>
+                                </div>
+    
+                            </form>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- main header -->
+    <header class="main-header">
+        <nav class="navbar navbar-expand-lg navbar-light p-0">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/logo.png" alt="" title="" />
+                </a>
+                <button class="navbar-toggler open-menu" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#"><span>الرئيسية </span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><span>مقالات</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><span>Vlogs</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>مجلدات</span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">قصص قصيرة</a>
+                                <a class="dropdown-item" href="#">الروايات</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">إقتباسات</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><span>من نحن</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><span>إتصل بنا</span></a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link btn" href="#" data-toggle="modal"
+                                data-target="#loginRegisterModal"><span>تسجيل الدخول</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn" href="#" data-toggle="modal"
+                                data-target="#loginRegisterModal"><span>تسجيل جديد</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- main header -->
+
+    <header class="page-title text-center" style="background: url(assets/images/slider.jpg) no-repeat center; background-size: cover;">
+        <div class="position-relative" style="z-index: 99;">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <h1>عنوان الصفحة هنا كبير وجميل</h1>
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a class="white-text" href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a class="white-text" href="#">Library</a></li>
+                            <li class="breadcrumb-item active">Data</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main class="main-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="bg-white p-3 mb-4" style="border-radius: 10px; box-shadow: 0 0 20px RGBA(232, 232, 232, 0.6);">
+                        <div class="user-info">
+                            <figure>
+                                <img src="assets/images/slider.jpg" alt="" title="" class="img-fluid" />
+                            </figure>
+                            <h4>إسم المؤلف هنا</h4>
+                            <p>التخصص هنا</p>
+
+                            <hr>
+                            <span class="date">التاريخ: 12/12/2020</span>
+                            <bR><bR>
+                            <h5>التصنيفات</h5>
+                            <div class="tags">
+                                <a href="" class="btn btn-sm">#تصنيف</a>
+                                <a href="" class="btn btn-sm">#تصنيف_2</a>
+                                <a href="" class="btn btn-sm">#تصنيف_3</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <figure class="single-image">
+                        <img src="assets/images/slider.jpg" alt="" title="" class="img-fluid" />
+                        <figcaption>
+                            <p>عناوان الصورة اذا فيه عنوان</p>
+                        </figcaption>
+                    </figure>
+                    <nav class="reactions-single">
+                        <ul>
+                            <li><a href=""><i class="fa fa-heart fa-fw"></i> 15</a></li>
+                            <li><a href=""><i class="fa fa-comment-alt fa-fw"></i> 10</a></li>
+                            <li><a href=""><i class="fa fa-share-alt fa-fw"></i> 4</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="stripped-text1 mb-4">
+                        <p></p>
+                        <p><span style="color:red">أمد/</span> رام الله:&nbsp;أكد فريق العمل المختص بمتابعة رحلات العودة "للأحباب" العالقين
+                            أن طائرة الملكية الأردنية التي تقل (312) من الأحباب العالقين في الولايات المتحدة الأميركية ستصل إلى مطار الملكية
+                            علياء فجر غد الأحد.</p>
+                    
+                        <p>وقال الفريق في بيان صدر عن وزارة الخارجية، مساء يوم السبت، أن الحافلات ستقل "الأحباب" من المطار إلى معبر الكرامة
+                            مباشرة ليدخلوا الى ارض الوطن، وهم الدفعة الثانية من العالقين في الولايات المتحدة الذين سجلوا في وزارة الخارجية
+                            والبالغ عددهم حتى الآن 900 عالق.</p>
+                    
+                        <p>وأفاد فريق العمل المختص بمتابعة الترتيبات والتنسيقات اللازمة لمغادرة المواطنين العالقين في الوطن الى أعمالهم
+                            واسرهم في الخارج، بأن 30 مواطنا وطالبا سيغادرون أرض الوطن صباح الغد في طريقهم إلى المانيا للالتحاق بأعمالهم
+                            وأسرهم ودراستهم، وذلك على متن طائرة الملكية الأردنية التي ستغادر عمان الى فرانكفورت لاجلاء الدفعة الأولى من
+                            العالقين الفلسطينيين في الدول الأوروبية.</p>
+                    
+                        <p>وأشار فريق العمل المصغر في الوزارة إلى أنه تم حل مشكلة العالقين من مواطنين وطلبة في جنوب افريقيا، حيث سيصلوا على
+                            متن طائرة جنوب افريقية مساء الغد الى الأردن الشقيق، وعددهم 15 عالقا من الاحباب، مبينا أن هذا الإنجاز جاء كثمرة
+                            مباشرة للتنسيق المشترك بين سفارة دولة فلسطين وسفارة المملكة الأردنية الهاشمية الشقيقة لدى جنوب افريقيا، في عملية
+                            اجلاء مشتركة للرعايا الأردنيين والفلسطينيين، بالتعاون مع السلطات المختصة في جنوب افريقيا مشكورة. وقامت الوزارة
+                            وبالشراكة مع جهاز المخابرات العامة، وبتعاون سفير المملكة لدى دولة فلسطين، وبجهد كبير بذلته سفارة دولة فلسطين في
+                            عمان، بتأمين الموافقات الرسمية اللازمة لانطلاق عملية الاجلاء المشتركة، وضمان دخولهم الى ارض الوطن عبر معبر
+                            الكرامة، حيث سيصل العالقين الفلسطينيين الى ارض الوطن صباح يوم الاثنين المقبل.</p>
+                    
+                        <p>وأفاد فريق العمل المختص بمتابعة أوضاع الجالية الفلسطينية في الولايات المتحدة؛ بتسجيل 574 إصابة جديدة في صفوف
+                            الجالية في نيويورك، وميامي، واريزونا، وفلوريدا، وتكساس، ودالاس، وشيكاغو ليرتفع عدد الإصابات الإجمالي الى 1855،
+                            فيما لم يتم رصد أية حالة وفاة جديدة ليبقى العدد 64.</p>
+                    
+                        <p>وأكدت سفارة دولة فلسطين لدى قطر تسجيل حالتي وفاة للمواطنتين: يسرى الخزندار (65 عاما)، وآمنة عبد الرحمن قفة (82
+                            عاما)، ليرتفع عدد الوفيات في صفوف الجالية إلى 6، كما تتابع السفارة مع الجهات الرسمية المختصة اجراءات الدفن، وتقف
+                            الى جانب أسر وذوي المتوفين لتلبية احتياجاتها ضمن امكانياتها المتاحة</p>
+                        <p></p>
+                    </div>
+
+                    <div class="list-holder">
+                        <header class="iner-title author">
+                            <h4>مكتبة الصور</h4>
+                        </header>
+                        <div class="d-flex flex-wrap">
+                            <article class="gallery-image1">
+                                <a href="assets/images/slider.jpg" data-fancybox="images" data-caption="My caption">
+                                    <figure class="gallery-item">
+                                        <div class="view-image">
+                                            <i class="fas fa-eye fa-fw"></i>
+                                        </div>
+                                        <img src="assets/images/slider.jpg" alt="" title="" />
+                                    </figure>
+                                </a>
+                            </article>
+                            <article class="gallery-image1">
+                                <a href="assets/images/slider.jpg" data-fancybox="images" data-caption="My caption">
+                                    <figure class="gallery-item">
+                                        <div class="view-image">
+                                            <i class="fas fa-eye fa-fw"></i>
+                                        </div>
+                                        <img src="assets/images/slider.jpg" alt="" title="" />
+                                    </figure>
+                                </a>
+                            </article>
+                            <article class="gallery-image1">
+                                <a href="assets/images/slider.jpg" data-fancybox="images" data-caption="My caption">
+                                    <figure class="gallery-item">
+                                        <div class="view-image">
+                                            <i class="fas fa-eye fa-fw"></i>
+                                        </div>
+                                        <img src="assets/images/slider.jpg" alt="" title="" />
+                                    </figure>
+                                </a>
+                            </article>
+                            <article class="gallery-image1">
+                                <a href="assets/images/slider.jpg" data-fancybox="images" data-caption="My caption">
+                                    <figure class="gallery-item">
+                                        <div class="view-image">
+                                            <i class="fas fa-eye fa-fw"></i>
+                                        </div>
+                                        <img src="assets/images/slider.jpg" alt="" title="" />
+                                    </figure>
+                                </a>
+                            </article>
+                            <article class="gallery-image1">
+                                <a href="assets/images/slider.jpg" data-fancybox="images" data-caption="My caption">
+                                    <figure class="gallery-item">
+                                        <div class="view-image">
+                                            <i class="fas fa-eye fa-fw"></i>
+                                        </div>
+                                        <img src="assets/images/slider.jpg" alt="" title="" />
+                                    </figure>
+                                </a>
+                            </article>
+                            <article class="gallery-image1">
+                                <a href="assets/images/slider.jpg" data-fancybox="images" data-caption="My caption">
+                                    <figure class="gallery-item">
+                                        <div class="view-image">
+                                            <i class="fas fa-eye fa-fw"></i>
+                                        </div>
+                                        <img src="assets/images/slider.jpg" alt="" title="" />
+                                    </figure>
+                                </a>
+                            </article>
+                            <article class="gallery-image1">
+                                <a href="assets/images/slider.jpg" data-fancybox="images" data-caption="My caption">
+                                    <figure class="gallery-item">
+                                        <div class="view-image">
+                                            <i class="fas fa-eye fa-fw"></i>
+                                        </div>
+                                        <img src="assets/images/slider.jpg" alt="" title="" />
+                                    </figure>
+                                </a>
+                            </article>
+                            <article class="gallery-image1">
+                                <a href="assets/images/slider.jpg" data-fancybox="images" data-caption="My caption">
+                                    <figure class="gallery-item">
+                                        <div class="view-image">
+                                            <i class="fas fa-eye fa-fw"></i>
+                                        </div>
+                                        <img src="assets/images/slider.jpg" alt="" title="" />
+                                    </figure>
+                                </a>
+                            </article>
+                            <article class="gallery-image1">
+                                <a href="assets/images/slider.jpg" data-fancybox="images" data-caption="My caption">
+                                    <figure class="gallery-item">
+                                        <div class="view-image">
+                                            <i class="fas fa-eye fa-fw"></i>
+                                        </div>
+                                        <img src="assets/images/slider.jpg" alt="" title="" />
+                                    </figure>
+                                </a>
+                            </article>
+                            <article class="gallery-image1">
+                                <a href="assets/images/slider.jpg" data-fancybox="images" data-caption="My caption">
+                                    <figure class="gallery-item">
+                                        <div class="view-image">
+                                            <i class="fas fa-eye fa-fw"></i>
+                                        </div>
+                                        <img src="assets/images/slider.jpg" alt="" title="" />
+                                    </figure>
+                                </a>
+                            </article>
+                            <article class="gallery-image1">
+                                <a href="assets/images/slider.jpg" data-fancybox="images" data-caption="My caption">
+                                    <figure class="gallery-item">
+                                        <div class="view-image">
+                                            <i class="fas fa-eye fa-fw"></i>
+                                        </div>
+                                        <img src="assets/images/slider.jpg" alt="" title="" />
+                                    </figure>
+                                </a>
+                            </article>
+                            <article class="gallery-image1">
+                                <a href="assets/images/slider.jpg" data-fancybox="images" data-caption="My caption">
+                                    <figure class="gallery-item">
+                                        <div class="view-image">
+                                            <i class="fas fa-eye fa-fw"></i>
+                                        </div>
+                                        <img src="assets/images/slider.jpg" alt="" title="" />
+                                    </figure>
+                                </a>
+                            </article>
+                            <article class="gallery-image1">
+                                <a href="assets/images/slider.jpg" data-fancybox="images" data-caption="My caption">
+                                    <figure class="gallery-item">
+                                        <div class="view-image">
+                                            <i class="fas fa-eye fa-fw"></i>
+                                        </div>
+                                        <img src="assets/images/slider.jpg" alt="" title="" />
+                                    </figure>
+                                </a>
+                            </article>
+                            <article class="gallery-image1">
+                                <a href="assets/images/slider.jpg" data-fancybox="images" data-caption="My caption">
+                                    <figure class="gallery-item">
+                                        <div class="view-image">
+                                            <i class="fas fa-eye fa-fw"></i>
+                                        </div>
+                                        <img src="assets/images/slider.jpg" alt="" title="" />
+                                    </figure>
+                                </a>
+                            </article>
+                            <article class="gallery-image1">
+                                <a href="assets/images/slider.jpg" data-fancybox="images" data-caption="My caption">
+                                    <figure class="gallery-item">
+                                        <div class="view-image">
+                                            <i class="fas fa-eye fa-fw"></i>
+                                        </div>
+                                        <img src="assets/images/slider.jpg" alt="" title="" />
+                                    </figure>
+                                </a>
+                            </article>
+                            <article class="gallery-image1">
+                                <a href="assets/images/slider.jpg" data-fancybox="images" data-caption="My caption">
+                                    <figure class="gallery-item">
+                                        <div class="view-image">
+                                            <i class="fas fa-eye fa-fw"></i>
+                                        </div>
+                                        <img src="assets/images/slider.jpg" alt="" title="" />
+                                    </figure>
+                                </a>
+                            </article>
+                            <article class="gallery-image1">
+                                <a href="assets/images/slider.jpg" data-fancybox="images" data-caption="My caption">
+                                    <figure class="gallery-item">
+                                        <div class="view-image">
+                                            <i class="fas fa-eye fa-fw"></i>
+                                        </div>
+                                        <img src="assets/images/slider.jpg" alt="" title="" />
+                                    </figure>
+                                </a>
+                            </article>
+                            <article class="gallery-image1">
+                                <a href="assets/images/slider.jpg" data-fancybox="images" data-caption="My caption">
+                                    <figure class="gallery-item">
+                                        <div class="view-image">
+                                            <i class="fas fa-eye fa-fw"></i>
+                                        </div>
+                                        <img src="assets/images/slider.jpg" alt="" title="" />
+                                    </figure>
+                                </a>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="iframe-video">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/CefIuyLC0Ek" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="iframe-video">
+                        <!-- Load Facebook SDK for JavaScript -->
+                        <div id="fb-root"></div>
+                        <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+                    
+                        <!-- Your embedded video player code -->
+                        <div class="fb-video" data-href="https://www.facebook.com/facebook/videos/10153231379946729/" data-width="500"
+                            data-show-text="false">
+                            <div class="fb-xfbml-parse-ignore">
+                                <blockquote cite="https://www.facebook.com/facebook/videos/10153231379946729/">
+                                    <a href="https://www.facebook.com/facebook/videos/10153231379946729/">How to Share With Just Friends</a>
+                                    <p>How to share with just friends.</p>
+                                    Posted by <a href="https://www.facebook.com/facebook/">Facebook</a> on Friday, December 5, 2014
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="iframe-video">
+                        <video controls style="width: 100%;">
+                            <source src="http://web.wsla.ps/mov_bbb.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <iframe src="pdf.pdf" width="100%" height="700px" style="border: none; border-radius: 5px; margin-bottom: 25px;">
+                    </iframe>
+
+                    <hr>
+
+                    <!-- Contenedor Principal -->
+                    <div class="comments-container">
+                        <h1>التعليقات</h1>
+                    
+                        <ul id="comments-list" class="comments-list">
+                            <li>
+                                <div class="comment-main-level">
+                                    <!-- Avatar -->
+                                    <div class="comment-avatar"><img
+                                            src="http://i9.photobucket.com/albums/a88/creaticode/avatar_1_zps8e1c80cd.jpg" alt=""></div>
+                                    <!-- Contenedor del Comentario -->
+                                    <div class="comment-box">
+                                        <div class="comment-head">
+                                            <h6 class="comment-name by-author"><a href="http://creaticode.com/blog">محمد حسن</a></h6>
+                                            <span>منذ دقيقة</span>
+                                        </div>
+                                        <div class="comment-content">
+                                            متن طائرة جنوب افريقية مساء الغد الى الأردن الشقيق، وعددهم 15 عالقا من الاحباب، مبينا أن هذا الإنجاز جاء كثمر
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Respuestas de los comentarios -->
+                                <ul class="comments-list reply-list">
+                                    <li>
+                                        <!-- Avatar -->
+                                        <div class="comment-avatar"><img
+                                                src="http://i9.photobucket.com/albums/a88/creaticode/avatar_2_zps7de12f8b.jpg" alt=""></div>
+                                        <!-- Contenedor del Comentario -->
+                                        <div class="comment-box">
+                                            <div class="comment-head">
+                                                <h6 class="comment-name"><a href="http://creaticode.com/blog">محمد حسن</a></h6>
+                                                <span>منذ دقيقة</span>
+                                            </div>
+                                            <div class="comment-content">
+                                                متن طائرة جنوب افريقية مساء الغد الى الأردن الشقيق، وعددهم 15 عالقا من الاحباب، مبينا أن هذا الإنجاز جاء كثمر
+                                            </div>
+                                        </div>
+                                    </li>
+                    
+                                    <li>
+                                        <!-- Avatar -->
+                                        <div class="comment-avatar"><img
+                                                src="http://i9.photobucket.com/albums/a88/creaticode/avatar_1_zps8e1c80cd.jpg" alt=""></div>
+                                        <!-- Contenedor del Comentario -->
+                                        <div class="comment-box">
+                                            <div class="comment-head">
+                                                <h6 class="comment-name by-author"><a href="http://creaticode.com/blog">محمد حسن</a></h6>
+                                                <span>منذ دقيقة</span>
+                                            </div>
+                                            <div class="comment-content">
+                                                متن طائرة جنوب افريقية مساء الغد الى الأردن الشقيق، وعددهم 15 عالقا من الاحباب، مبينا أن هذا الإنجاز جاء كثمر
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                    
+                            <li>
+                                <div class="comment-main-level">
+                                    <!-- Avatar -->
+                                    <div class="comment-avatar"><img
+                                            src="http://i9.photobucket.com/albums/a88/creaticode/avatar_2_zps7de12f8b.jpg" alt=""></div>
+                                    <!-- Contenedor del Comentario -->
+                                    <div class="comment-box">
+                                        <div class="comment-head">
+                                            <h6 class="comment-name by-author"><a href="http://creaticode.com/blog">محمد حسن</a></h6>
+                                            <span>منذ دقيقة</span>
+                                        </div>
+                                        <div class="comment-content">
+                                            متن طائرة جنوب افريقية مساء الغد الى الأردن الشقيق، وعددهم 15 عالقا من الاحباب، مبينا أن هذا الإنجاز جاء كثمر
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- main footer -->
+    <footer class="main-footer">
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <a href="" class="d-block footer-logo">
+                        <img src="assets/images/logo.png" alt="" title="" />
+                    </a>
+                    <div class="text-strip">
+                        <p>
+                            العنوان هنا عنوان الخبر الجانبي في مزيداً من الأخبار
+                            توالت ردود الأفعال الفلسطينية الرافضة، لدعوة حماس المرتقبة لتشكيل لجنة عليا من لمواجهة "صفقة ترامب".
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <ul class="list-unstyled foter-list">
+                        <li class="nav-item"><a href="" class="nav-link">الرئيسية</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">سياسة الخصوصية</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">الشروط والأحكام</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">المجلات</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <form class="blog-form">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label><i class="fa fa-user-alt fa-fw"></i> الإسم</label>
+                                    <input type="text" name="" class="form-control" placeholder="إسم المستخدم" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label><i class="fa fa-at fa-fw"></i> بريد إلكتروني</label>
+                                    <input type="email" name="" class="form-control" placeholder="بريد إلكتروني" />
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label><i class="fa fa-edit fa-fw"></i> رسالتك</label>
+                            <textarea name="" class="form-control" placeholder="" rows="4"></textarea>
+                        </div>
+                        
+                        <div class="form-group text-center">
+                            <button type="submit" name="" class="btn btn-blog">إرسال</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <div class="row align-items-center">
+                <div class="col-lg-12 text-center">
+                    <p>©2020 حقوق النشر محفوظة لشركة <a href="" target="_blank" class="text-danger">PinkPen</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- main footer -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/vendor/jquery.min.js"></script>
+    <script src="assets/vendor/popper.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="assets/libs/bootstrap-datepicker-master/dist/js/bootstrap-datepicker.min.js"></script>
+    <script src="assets/libs/bootstrap-datepicker-master/dist/locales/bootstrap-datepicker.ar.min.js"
+        charset="UTF-8"></script>
+        <script src="assets/libs/fancybox/jquery.fancybox.min.js" charset="UTF-8"></script>
+    <script>
+        $(document).ready(function () {
+            "use strict";
+
+            if ($('.datepicker')) {
+                $('.datepicker').datepicker({
+                    orientation: 'bottom',
+                    language: 'ar'
+                });
+            }
+        });
+    </script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>

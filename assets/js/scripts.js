@@ -41,6 +41,22 @@ $(document).ready(function () {
 
         });
     });
+
+    // has-story
+    $('.has-story').on('click', function (e) {
+        e.preventDefault();
+        $('.story').fadeIn('slow');
+
+        $('.close-story').on('click', function (e) {
+            e.preventDefault();
+            $('.story').fadeOut('slow');
+        });
+    });
+
+    $('.reactions-single a').on('click', function (e) {
+        e.preventDefault();
+        $(this).addClass('active')
+    });
     
 });
 
