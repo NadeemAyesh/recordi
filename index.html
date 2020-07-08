@@ -111,6 +111,10 @@
                         <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                             <form class="blog-form">
                                 <div class="px-5 py-3">
+                                    <figure class="modal-img">
+                                        <img src="assets/images/icons/plus.svg" alt="" title="" class="img-fluid" />
+                                    </figure>
+                                    <h4 class="form-title">إنضم إلينا لتصبح من عائلتنا!</h4>
                                     <div class="alert bg-light text-center">
                                         <!-- <p><b>إقرأ ما شئت مجاناً لمدة 30 يوماً!</b></p> -->
                                         <dvi class="row">
@@ -124,15 +128,20 @@
                                                 <div class="motivition-item">
                                                     <img src="assets/images/icons/star.svg" alt="" title="" class="img-fluid" />
                                                     <p>أنشئ روايتك الخاصة
-                                                    إكتشف متابعين وتفاعل معهم، واحفظ مقالاتك المفضلة</p>
+                                                        إكتشف متابعين وتفاعل معهم، واحفظ مقالاتك المفضلة</p>
                                                 </div>
                                             </div>
                                         </dvi>
                                     </div>
-                                    <figure class="modal-img">
-                                        <img src="assets/images/icons/plus.svg" alt="" title="" class="img-fluid" />
-                                    </figure>
-                                    <h4 class="form-title">إنضم إلينا لتصبح من عائلتنا!</h4>
+                                </div>
+
+                                <div class="d-flex align-items-center justify-content-center login-methods">
+                                    <a href="#" class="fb btn">
+                                        <i class="fab fa-facebook-f fa-fw"></i> Login with Facebook
+                                    </a>
+                                    <a href="#" class="google btn"><i class="fab fa-google fa-fw">
+                                        </i> Login with Google+
+                                    </a>
                                 </div>
 
                                 <div class="row justify-content-center">
@@ -363,10 +372,24 @@
                             <a class="nav-link btn modal-toggle" href="#nav-profile" data-toggle="modal" 
                                 data-target="#loginRegisterModal"><span>تسجيل جديد</span></a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link user-image-link has-story" href="javascript:;">
+                        <li class="nav-item drop-item">
+                            <a class="nav-link user-image-link" href="javascript:;">
                                 <figure><img src="assets/images/slider.jpg" alt="" title="" /></figure>
                             </a>
+                            <div class="custom-drop-menu">
+                                <div class="drop-hed">
+                                    <figure><img src="assets/images/slider.jpg" alt="" title="" /></figure>
+                                    <h5>إسم المستخدم كاملا</h5>
+                                    <p>التخصص</p>
+                                </div>
+                                
+                                <a href="" class="dropdown-item"><i class="fa fa-user fa-fw"></i> الحساب الشخصي</a>
+                                <a href="" class="dropdown-item"><i class="fa fa-user fa-fw"></i> المفضلة</a>
+                                <a href="" class="dropdown-item"><i class="fa fa-user fa-fw"></i> تعديل البيانات</a>
+                                <a href="" class="dropdown-item"><i class="fa fa-user fa-fw"></i> رابط</a>
+                                <div class="dropdown-divider"></div>
+                                <a href="" class="dropdown-item"><i class="fa fa-lock fa-fw"></i> تسجيل الخروج</a>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -733,6 +756,12 @@
                         <a href="" class="btn btn-light btn-block"><i class="fa fa-plus fa-fw"></i> مشاهدة المزيد</a>
                     </div>
                 </div>
+            </div>
+            <div class="top-ad">
+                <a href="https://api.whatsapp.com/send?phone=201125920447&amp;text=&amp;source=&amp;data=&amp;app_absent="
+                    target="_blank">
+                    <img src="https://amad.ps/upload/ar/images/1590338601-4724-2.jpg" alt="روابط مواقع التواصل">
+                </a>
             </div>
         </div>
     </section>
